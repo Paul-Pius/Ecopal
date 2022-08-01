@@ -1,0 +1,18 @@
+<div id="login">
+    <div class="switcher login-switch">
+        <button data-toggle="userlogin">
+            User
+        </button>
+        <button data-toggle="driverlogin">
+            Driver
+        </button>
+        <button data-toggle="adminlogin">
+            Admin
+        </button>
+    </div>
+    <div class="switcher-display login-disp">
+        <%- include('partials/userlogin.ejs') %> 
+        <%- include('partials/driverlogin.ejs') %>  
+        <%- include('partials/adminlogin.ejs') %>  
+    </div>
+</div>

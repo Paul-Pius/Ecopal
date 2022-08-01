@@ -1,0 +1,18 @@
+<div id="adminRegForm" class="registration-form">
+    <h5>Admin Registration Form</h5>
+    <form action="/admin/register" method="post">
+        <label>Company name</label>
+        <input type="text" name="companyName" required>
+        <label>Email address</label>
+        <input type="email" name="emailAddress" required>
+        <label>Password</label>
+        <div id='inputcontainer'>
+            <input type="password" name="password" required></input>
+        <label>Confirm password</label>
+        <div id='inputcontainer'>
+            <input type="password" name="confirmPassword" required></input>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+        <p class="login">Already registered? <a class="link" href="#">Login</a></p>
+    </form>
+</div>

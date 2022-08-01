@@ -1,0 +1,18 @@
+<div id="signup">
+    <div class="switcher sign-switch">
+        <button data-toggle="userRegForm">
+            User
+        </button>
+        <button data-toggle="driverRegForm">
+            Driver
+        </button>
+        <button data-toggle="adminRegForm">
+            Admin
+        </button>
+    </div>
+    <div class="switcher-display sign-disp">
+        <%- include('partials/userregisterpage.ejs') %> 
+        <%- include('partials/driverregform.ejs') %> 
+        <%- include('partials/adminregform.ejs') %> 
+    </div>
+</div>
