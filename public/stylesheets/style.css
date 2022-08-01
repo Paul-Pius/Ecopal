@@ -1,0 +1,346 @@
+/* font style of poppins imported from font awesome */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,200&display=swap'); */
+/* p {
+  color: teal
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', Verdana, Geneva, tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+li, ul {
+    list-style: none;
+}
+/*Nav work*/
+header {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 1.5rem;
+    color: teal;
+}
+.burger {
+  display: relative;
+  margin-right: 1rem;
+  font-size: 1.2em;
+  cursor: pointer;
+  z-index: 5;
+}
+.burger span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: teal;
+  margin-bottom: 0.3rem;
+}
+nav {
+  background-color: whitesmoke;
+  padding: 80px 20px 20px 20px;
+  /* padding-top: 80px; */
+  height: 100%;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  left: -200px;
+}
+nav a {
+  color: teal;
+  display: block;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  font-size: 0.91rem;
+}
+
+.text-muted {
+  display: inline-block;
+  color: darkslategrey;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  text-shadow: 0px 0px 15px cornsilk;
+  font-size: 0.9rem;
+}
+
+nav a:hover {
+  color: lawngreen;
+}
+/* open nav */
+nav.open {
+  left: 0;
+}
+
+.burger.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(10px);
+}
+.burger.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-10px);
+}
+.burger.open span:nth-child(2) {
+  /* transform: rotate(45deg); */
+  opacity: 0;
+  width: 0;
+}
+/* transitions */
+nav {
+  transition: left ease-in 0.3s;
+}
+.burger span {
+  transition: all ease-in 0.3s;
+}
+
+.alert.open {
+  right: 0;
+  opacity: 75%;
+}
+
+.alert {
+  position: absolute;
+  top: 5rem;
+  right: -500px;
+  padding: 5px 15px;
+  opacity: 0;
+  border-radius: 10px;
+  min-height: 5rem;
+  max-width: 500px;
+  background-color: aquamarine;
+  transition: ease-in 1s;
+}
+
+.d-none {
+  display: none;
+}
+
+.alert-close {
+  text-align: end;
+  cursor: pointer;
+  display: inherit;
+  color: teal;
+  padding: 5px 10px;
+  font-weight: 500;
+}
+
+.registration-form h5 {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.registration-form input {
+  /* font-size: 15px; */
+  border: unset;
+  margin-bottom: 1rem;
+  padding: 7px 10px;
+  background-color: whitesmoke;
+  width: 100%;
+}
+
+.registration-form button:hover {
+  color: lawngreen;
+  cursor: pointer;
+}
+
+.login {
+  text-align: center;
+  color: gray;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  padding: 0.3rem;
+}
+
+.link {
+  color: teal;
+}
+
+.flex {
+  /* font-size: 10px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+h5 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.section {
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+}
+
+label {
+  font-size: 1rem;
+  color: silver;
+}
+
+.password {
+  margin-left: 8rem;
+  margin-top: 0.5rem;
+}
+
+.btn {
+  width: 50%;
+  padding: 0.8rem 1rem;
+  border: unset;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+  margin: 0.5rem auto;
+  
+}
+
+#signup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.switcher {
+  max-width: 55rem;
+  padding: 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.switcher button {
+  padding: 1rem 3rem;
+  margin: 0 1rem;
+  background-color: transparent;
+  border: 0px solid transparent;
+  font-weight: 600;
+}
+
+.active {
+  color: teal;
+  box-shadow: 0px 2px 0px teal;
+}
+
+.switcher-display {
+  padding: 30px 50px;
+  max-width: 55rem;
+  margin: 0 auto;
+}
+
+.switch {
+  border: unset;
+  padding: 1rem 1.5rem;
+  margin-bottom: 0.5rem;
+  background-color: transparent;
+  color: teal;
+  font-weight: 600;
+}
+
+.switch:hover {
+  color: lawngreen;
+}
+
+.switch-1 {
+  border: unset;
+  padding: 1rem 1.5rem;
+  margin-bottom: 0.5rem;
+  background-color: teal;
+  color: whitesmoke;
+  font-weight: 900;
+}
+
+.switch-3 {
+  border: unset;
+  padding: 1rem 1.5rem;
+  margin-bottom: 0.5rem;
+  background-color: teal;
+  color: whitesmoke;
+  font-weight: 900;
+}
+
+.switch-1:hover {
+  color: lawngreen;
+}
+
+.home-hero {
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
+  align-items: center;
+  line-break: normal;
+  text-overflow: ellipsis;
+  text-align: center;
+  color: teal;
+  text-shadow: 5px 5px 0px lawngreen;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.user-info {
+  background-color: #7fffd488;
+  min-height: 3rem;
+  padding: 1rem 2rem;
+  margin-right: 1rem;
+  color: gray;
+  width: 95%;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.price-calc {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: gray;
+  background-color: #7fffd488;
+  min-height: 3rem;
+  width: 95%;
+  padding: 15px;
+  margin-left: 1rem;
+}
+
+.radio-label {
+  display: inline-block;
+  background-color: rgba(0, 128, 128, 0.254);
+  color: whitesmoke;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 0 0.2rem;
+}
+
+input[type='radio'] {
+  visibility: hidden;
+}
+
+input[type='radio']:checked + label {
+  box-shadow: 5px 5px 20px lawngreen;
+}
+
+.price-summary {
+  margin: 15px 0;
+  color: gray;
+  padding: 10px;
+  font-size: 0.7rem;
+}
+
+#userUpdate {
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+
+
+
+
+
+
+
+
+
